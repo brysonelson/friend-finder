@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .question-slider {
+            background: #5d4037 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Materialize navbar -->
+    <nav>
+        <div class="nav-wrapper cyan darken-3">
+            <a href="./home.html" class="center brand-logo">Friend Finder</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="./survey.html">Survey</a></li>
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light brown darken-1" href="survey.html"><i
+                        class="fas fa-poll"></i></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="#">
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="Name" type="text" class="validate">
+                    <label for="name">Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="photoURL" type="text" class="validate">
+                    <label for="photo">Photo Url</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Insert the link to your profile picture above</span>
+                </div>
+            </div>
+
+
+            <!-- Question 1 -->
+            <div class="card hoverable">
+                <h4 class="center">Question 1:</h4>
+                <p class="center">Your mind is always buzzing with unexplored ideas and plans.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qOneSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 2:</h4>
+                    <p class="center">Generally speaking, you rely more on your experience than your imagination.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qTwoSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 3:</h4>
+                    <p class="center">You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qThreeSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 4:</h4>
+                    <p class="center">You rarely do something just out of sheer curiosity.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qFourSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 5:</h4>
+                    <p class="center">People can rarely upset you.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qFiveSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 6:</h4>
+                    <p class="center">It is often difficult for you to relate to other people’s feelings.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qSixSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 7:</h4>
+                    <p class="center">In a discussion, truth should be more important than people’s sensitivities.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qSevenSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 8:</h4>
+                    <p class="center">You rarely get carried away by fantasies and ideas.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qEightSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 9:</h4>
+                    <p class="center">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qNineSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="card hoverable">
+                    <h4 class="center">Question 10:</h4>
+                    <p class="center">You feel more energetic after spending time with a group of people.</p>
+                <div class="row">
+                    <div class="col l2 offset-l1 center">
+                        <p>0 - Disagree</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="range-field">
+                            <input id="qTeneSlider" class="question-slider" type="range" id="test5" min="0" max="5" />
+                        </p>
+                    </div>
+                    <div class="col l2 center">
+                        <p>5 - Agree</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="btn waves-effect waves-light brown darken-1" id="submit">Submit</button>
+        </form>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Your Match!</h4>
+      <div class="match-img">
+
+      </div>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/JavaScript" src="../data/friends.js"></script>
+    <script type="text/JavaScript">
+    
+    var currentFriend = [];
+    var friendListTotals = [];
+
+    //constructor to create new friend
+    var NewFriend = function(name, photo, scores) {
+        this.name = name,
+        this.photo = photo,
+        this. scores = scores
+    }
+
+    // When you click the submit button
+
+    $("#submit").click(function() {
+        var newFriendScoresArr = [];
+        event.preventDefault();
+
+
+        var username = $("#Name").val();
+        var photoUrl = $("#photURL").val();
+
+        newFriendScoresArr.push($("#qOneSlider").val());
+        newFriendScoresArr.push($("#qTwoSlider").val());
+        newFriendScoresArr.push($("#qThreeSlider").val());
+        newFriendScoresArr.push($("#qFourSlider").val());
+        newFriendScoresArr.push($("#qFiveSlider").val());
+        newFriendScoresArr.push($("#qSixSlider").val());
+        newFriendScoresArr.push($("#qSevenSlider").val());
+        newFriendScoresArr.push($("#qEightSlider").val());
+        newFriendScoresArr.push($("#qNineSlider").val());
+        newFriendScoresArr.push($("#qTenSlider").val());
+
+        console.log(newFriendScoresArr);
+
+        var submitFriend = new NewFriend(username, photoUrl, newFriendScoresArr);
+
+        currentFriend = submitFriend;
+
+        // console.log(submitFriend);
+
+        // friendsArr.push(submitFriend);
+
+        console.log(friendsArr);
+
+        calculateMatch();
+
+        // $('#modal1').modal();
+        // $('#modal1').modal('open');
+    })
+
+    function calculateMatch() {
+
+        var lowest;
+        var highest;
+        var matchedFriend = {
+            name: null,
+            photoURL: null,
+            scoreDiff: null
+        };
+        //for loop through the entire friendsArr
+        for (var i = 0; i < friendsArr.length; i++) {
+
+            var scoreDiff = 0;
+            console.log("Your Score: " +currentFriend.scores + "\nFriends Score: " + friendsArr[i].scores);
+            // console.log(friendsArr[i].scores);
+
+            for (var j = 0; j < currentFriend.scores.length-1; j++) {
+                // console.log(friendsArr[i].scores[j]);
+                // console.log(currentFriend.scores[j]);
+                scoreDiff += Math.abs(currentFriend.scores[j] - friendsArr[i].scores[j]);
+                console.log(parseInt(scoreDiff));
+            }
+
+            console.log(parseInt(scoreDiff));
+            friendListTotals.push({
+                name: friendsArr[i].name,
+                photo: friendsArr[i].photo,
+                scoreDiff: scoreDiff
+            })
+
+            // var scoreDiff = 0;
+            // There's no real number bigger than plus Infinity
+            lowest = Number.POSITIVE_INFINITY;
+            highest = Number.NEGATIVE_INFINITY;
+            var tmpName;
+            var tmpPhoto;
+            var tmpScore;
+            for (var i=0; i<friendListTotals.length; i++) {
+                tmpName = friendListTotals[i].name;
+                tmpPhoto = friendListTotals[i].photo;
+                tmpScore = friendListTotals[i].scoreDiff;
+                if (tmpScore < lowest) {
+                    lowest = tmpScore
+                    
+                    matchedFriend.name = friendListTotals
+                    
+                };
+                if (tmpScore > highest) highest = tmpScore;
+            }
+
+            matchedFriend.name = tmpName;
+            matchedFriend.photo = tmpPhoto;
+            matchedFriend.scoreDiff = tmpScore;
+
+            console.log(highest, lowest);
+            
+
+        }
+        console.log(matchedFriend);
+        var matchImg = $("<img src='" + matchedFriend.photo + "'>" )
+
+        $(".match-img").append(matchImg);
+       
+        openModal();
+        
+    }
+
+    function openModal() {
+        $('#modal1').modal();
+        $('#modal1').modal('open');
+    }
+
+    $(document).ready(function(){
+        
+    });
+        
+        
+        
+    </script>
+</body>
+
+</html>
